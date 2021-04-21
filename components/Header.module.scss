@@ -1,0 +1,28 @@
+@import '../global.scss';
+
+.header {
+    display: flex;
+    height: 100px;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.05);
+    @include mq(md) {
+        height: 130px;
+        display: block;
+    }
+}
+
+.nav {
+    margin-top: 25px;
+    margin-left: auto;
+    @include mq(md) {
+        text-align: center;
+    }
+}
+
+.button {
+    margin-right: 25px;
+    &:hover {
+        background-color: blue;
+        color: whitesmoke;
+        box-shadow: 0 5px 10px black;
+    }
+}

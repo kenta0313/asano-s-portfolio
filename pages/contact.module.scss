@@ -1,0 +1,26 @@
+@import '../global.scss';
+
+.form {
+    text-align: center;
+}
+
+.title {
+    text-align: center;
+    font-size: 30px;
+    font-weight: bold;
+    animation-name: fadeup;
+    animation-duration: 2s;
+    @include mq(md) {
+        font-size: 20px;
+    }
+}
+@keyframes fadeup {
+from {
+    opacity: 0;
+    transform: translateY(20px);
+}
+to {
+    opacity: 1;
+    transform: translateY(0);
+}
+}
